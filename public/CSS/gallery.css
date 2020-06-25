@@ -1,0 +1,117 @@
+.Gallery{
+    width: 100%;
+}
+.Gallery .flexx{
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Gallery .flexItem{
+    width:300px;
+    height: 200px;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+.Gallery .flexItem:hover{
+    transform: scale(.9);
+}
+.Gallery .flexItem:nth-child(2){
+    padding-top: 4rem;
+    height: 300px;
+
+}
+.Gallery .flexItem:nth-child(5){
+    width:280px;
+    height: 180px;
+}
+.Gallery img{
+    width: 100%;
+}
+
+
+.imagesGalleryContainer{
+    transition: var(--transition2);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.imagesGalleryContainer div {
+    position: relative;
+    height: 100%;
+
+}
+.imagesGalleryContainer div .currentImage{
+    position: absolute;
+    height: 100px;
+    overflow: hidden;
+    z-index: 999;
+}
+.currentImageContainer{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.imagesGalleryContainer  img{
+    width: 100%;
+}  
+
+.backgroundFillGallery{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    background-color: var(--colorBlack);
+    z-index: 999;
+    transition: var(--transition2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GalleryNext ,.GalleryClose, .GalleryPrevious{
+    position: absolute;
+    z-index: 99999;
+}
+.GalleryNext .GalleryPrevious{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.GalleryNext {
+    right: 5%;
+}
+.GalleryPrevious{
+    left: 5%;
+}
+
+
+
+
+
+.GalleryClose{
+    top: 10%;
+    right: 2%;
+}
+.GalleryClose:focus ,.GalleryNext:focus , .GalleryPrevious:focus {
+    outline: none;
+}
+.GalleryClose i ,.GalleryNext i , .GalleryPrevious i {
+    font-size: 2rem;
+    color: var(--colorPrimary);
+}

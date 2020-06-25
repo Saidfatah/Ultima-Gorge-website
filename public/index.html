@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/navBar.css">
+    <link rel="stylesheet" href="./CSS/hero.css">
+    <link rel="stylesheet" href="./CSS/introduction.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/gallery.css">
+    <link rel="stylesheet" href="./CSS/ornaments.css">
+    <link rel="stylesheet" href="./CSS/video.css">
+    <link rel="stylesheet" href="./CSS/Book.css">
+    <link rel="stylesheet" href="./CSS/flash.css">
+    <link rel="stylesheet" href="./CSS/flatPicker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/403c0ed747.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="imagesGalleryContainer">
+        <div>
+            <div class="backgroundFillGallery"></div>
+            <a href="#" class="GalleryClose"><span><i class="fas fa-times"></i></span></a>
+            <a href="#" class="GalleryNext"><span><i class="fas fa-times"></i></span></a>
+            <a href="#" class="GalleryPrevious"><span><i class="fas fa-times"></i></span></a>
+            <div class="currentImage">
+                <div class="currentImageContainer">
+                    <img src="../public/IMG/ozoudWatterfall.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videoPContainer">
+        <div>
+            <div class="backgroundFill"></div>
+            <a href="#" class="close"><span><i class="fas fa-times"></i></span></a>
+            <iframe class="video " src="https://www.youtube.com/embed/zIESVgAmwzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="navBar">
+        <div class="navBarfill"></div>
+        <div class="navBar__content">
+            <a href="#" class="navBarLocation flexCenter navBtn slideUpColors ">
+                <span class="roll">
+                  <span class="Btntext">
+                     <span><span><i class="fas fa-compass"></i></span>Ultima Destnations</span>
+                  </span>
+                </span>
+             </a>
+            <a href="#" class="logo slideUpColors">
+             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.93 170.74" width='178px' height='180px'>
+                 <path class="logoIcon" d="M594.19,101.4a3.53,3.53,0,0,0,1.68-2.1H605a3.49,3.49,0,0,0,1.68,2.1,5,5,0,0,0-1.35,2.22h-9.77A5.13,5.13,0,0,0,594.19,101.4Zm-.44-21.06c.45,6.09,3.49,8.54,4.34,15.89-1.14-4.76-4-11-10.91-13-11-3.13-18.65,8.65-11.82,15.07a9.41,9.41,0,0,0,10.75,1.7c-4.3-1.43-3.7-9,3.21-7.86a9.23,9.23,0,0,1,6.46,5.71h4.64V63.43C600.23,63.69,593,70,593.75,80.34Zm1.82,24.75a3.37,3.37,0,0,1-.29.8c-1.18,2.25-3.2,4-5.94,3.65-3.83-.56-3.2-3.84-3.2-3.84-5.28,2.32-3.15,11.55,4.6,10,4.89-1,6.71-6.82,6.91-10.64Zm19.14.61s.63,3.28-3.2,3.84c-2.74.4-4.76-1.4-5.94-3.65a3,3,0,0,1-.29-.8h-4.86v21.49s5.27-1.91,5.62-6.08-1.79-6.44-2.89-12.71c1.08,3.41,3.13,7.2,7,7.94C617.86,117.25,620,108,614.71,105.7Zm-1.05-22.48c-7.77,2.21-9.81,9-10.53,14.62h1.94a9.23,9.23,0,0,1,6.46-5.71c6.91-1.17,7.51,6.43,3.21,7.86a9.41,9.41,0,0,0,10.75-1.7C632.31,91.87,624.69,80.09,613.66,83.22Z" transform="translate(-61.15 -63.43)"></path>
+                 <path class="logoText" d="M485.63,173.76c0,3.39,2,4.43,2,4.43v.36h-24.8v-.36s2-1,2-4.43V97.65a5.93,5.93,0,0,1,5.92-5.93h16.85v.36s-2,1-2,4.43ZM413.56,96.15a7.6,7.6,0,0,0-6.91-4.43h-19.5v.34a10,10,0,0,1,4.21,4.88l37.7,81.61h.34l11.07-24.15Zm-2.05,82.06s-5.5-3.59-12.36-11.9a73.45,73.45,0,0,1-9.84-15H389v22.47c0,3.39-2,4.43-2,4.43v.36h24.57ZM83.92,154.3V98.49a6.77,6.77,0,0,0-6.77-6.77h-16v.36s2,1,2,4.43v46.23c0,27.95,17.48,35.81,33.09,35.81v-.26C94.06,178.29,83.92,173.79,83.92,154.3Zm56.79-62.58v.36s-2,1-2,4.43v46.23c0,27.95-17.49,35.81-33.1,35.81v-.26c2.22,0,12.36-4.5,12.36-24V98.49a6.77,6.77,0,0,1,6.77-6.77Zm215.31,82V97.65a5.93,5.93,0,0,0-5.92-5.93H333.25v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S356,177.15,356,173.76Zm-173.28-82H165.9v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h22.77V97.65A5.93,5.93,0,0,0,182.74,91.72Zm43.38,59.57A88.75,88.75,0,0,1,198,178.21v.34h22.56a5.93,5.93,0,0,0,5.92-5.93V151.29Zm56.48,22.47v-82H261.86v82c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S282.6,177.15,282.6,173.76ZM231.67,97.65V119H232a66.28,66.28,0,0,1,10.27-15.23,69.91,69.91,0,0,1,13.43-11.69v-.34H237.59A5.93,5.93,0,0,0,231.67,97.65Zm74.74-5.93H288.3v.34a70.25,70.25,0,0,1,13.43,11.69A66.69,66.69,0,0,1,312,119h.34V97.65A5.93,5.93,0,0,0,306.41,91.72Zm214.45,59.57a7.63,7.63,0,0,0-6.8,4.18l-9,17.86c-1.87,3.7-4.1,4.88-4.1,4.88v.34h19.77a7.63,7.63,0,0,0,6.8-4.18l9.11-18a11.24,11.24,0,0,1,4-4.74v-.34ZM593,178.55H573.2a7.63,7.63,0,0,1-6.8-4.18l-30.95-61.13,11.32-22.36h.34l41.75,82.45c1.88,3.7,4.11,4.88,4.11,4.88Z" transform="translate(-61.15 -63.43)"></path>
+             </svg>
+             <div>gorge</div>
+            </a>
+            <a href="tel:  +41 22 779 33 33" class="NavBarPhone flexCenter navBtn slideUpColors">
+                <span class="roll ">
+                    <span class="Btntext">
+                     <span><span><i class="fas fa-phone"></i></span> +212 54893201</span>
+                    </span>
+                </span>
+            </a>
+            <a href="#" class="NavBarBookNow flexCenter navBtn slideUpColors">
+                <span class="roll">
+                    <span class="Btntext">
+                     <span><span><i class="fas fa-angle-right"></i></span> Book Now</span>
+                    </span>
+                </span>
+            </a>
+        </div>
+    </div>
+   <div class="hero">
+       <img src="./IMG/09.png" alt="hotel" class="heroImage">
+       <div class="heroText"> <span>Ultima Groge</span> </div>
+   </div>
+
+   <section class="introduction  mt-4 mb-2">
+      <div class="mb-2">
+        <div class="ornament ">
+            <div class="ornamentLine"></div>
+            <div class="ornamentoctagon"></div>
+         </div>
+      </div>
+
+      <div class="flexy mb-2 align-center  justify-center">
+        <h3 >
+            <span class="accent underline">
+              Ultima Gorge
+            </span>
+            <br>
+           <p> a spectacular Berber palace with an 
+            unparalleled 180-degree view of the atlass mountains and the artificial
+             lake of bin el widan  with its 
+            fresh blue watter </p>
+        </h3>
+
+        <div class="p mt-3">
+            <p>  Perched on a dramatic hillside looking out over the rugged coastline and 
+                crystal-clear waters of the deep blue Ionian sea, this awe-inspiring villa
+                is a haven of tranquillity and privacy to share with friends and family. </p>
+        </div>
+        <img class="img mt-3" src="../public//IMG/hotub.jpg" alt="">
+
+        <div class="p mt-3">
+            <h4 class="mb-2">the Mediterranean lifestyle</h4>
+            <p class="p"> Set over two levels, the sublime 7-bedroom villa seamlessly blends 
+                the outdoor landscape with the indoor spaces, boasting an unspoilt 
+                180-degree view of the sea and verdant coast.  The residence is the perfect 
+                retreat to unwind in magnificent white interiors subtly decorated with the 
+                signature Ultima interior designs and a typically Mediterranean colour palette. </p>
+        </div>
+     
+        <img class="img mt-3" src="../public/IMG/jetski-1.jpg" alt="">
+        <div class="p mt-3">
+            <h4 class="mb-2">the Ultima experience</h4>
+            <p class="p"> Escape with the 24m yacht Ultima Beach to sunbath in a secluded cove,
+                 dive into the two-tiered infinity swimming pool, go and discover the cultural
+                  and historical wonders of Corfu and Ancient Greece, enjoy a holistic heated therapy
+                   in the impressive Hammam...
+                 or simply relax with your loved ones dining al fresco and contemplating the sunset.</p>
+        </div>
+
+        <div class="btnHolder mt-4 mb-4">
+            <div class="button-with-icon mr-half" id="bookScroll2">
+                <span><i class="fas fa-arrow-right"></i></span>
+                <span>Book a Stay</span> 
+            </div>
+            <div class="button-with-icon ml-half"> <span>Download Brochure</span></div>
+        </div>
+        <button class=" container mt-4 mb-4 video-block " data-modal-toggle=""><img class="video-block__img started loaded" data-lazy-image="" src="/application/files/8515/7806/9237/UltimaCorfu_Ext_day.jpg" data-src="/application/files/8515/7806/9237/UltimaCorfu_Ext_day.jpg" alt="">
+            <img src="../public//IMG//videoBackgroujnd.png" alt="bin el widan">
+            <div class="video-block__play play-button">
+                <i class="fas fa-play"></i>
+            </div>
+        </button>
+
+        <h3  class=" mt-4 mb-2">
+            <span class="accent underline"> Amenities</span>
+            <br>
+        </h3>
+        <div class="p ">
+            <p class="p amneities"> 1 master bedroom with private terrace
+
+                -<br>
+                
+                6 bedrooms <br>
+                
+                -<br>
+                
+                2 swimming pools<br>
+                
+                -<br>
+                
+                1 hammam<br>
+                
+                -<br>
+                
+                1 jacuzzi<br>
+                
+                -<br>
+                
+                1 yacht - Ultima Beach<br>
+                
+                Private access to the beach<br>
+                
+                -<br>
+                
+                Fitness room<br>
+                
+                -<br>
+                
+                Cinema room<br>
+                
+                -<br>
+                
+                Treatment room<br>
+                
+                -<br>
+                
+                Air conditioning<br>
+                
+                -<br>
+                
+                Ultima Signature Service</p>
+        </div>
+      </div>
+
+      <div >
+        <div class="ornament ">
+            <div class="ornamentLine"></div>
+            <div class="ornamentoctagon"></div>
+         </div>
+      </div>
+      
+   </section>
+
+   <section class="Gallery container">
+       <h3 ><span > Ultima Gorge</span></h3>
+       <div class="flexx">
+           <div class="flexItem mb-4 mt-4">
+               <img src="../public/IMG/ozoudWatterfall.jpeg" alt="">
+           </div>
+           <div class="flexItem mb-4 mt-4">
+               <img src="../public/IMG/hotub.jpg" alt="">
+           </div>
+           <div class="flexItem mb-4 mt-4">
+               <img src="../public/IMG/jetski-1.jpg" alt="">
+           </div>
+           <div class="flexItem mb-4">
+               <img src="../public/IMG/Restaurants-Ouzoud-Waterfalls.jpg" alt="">
+           </div>
+           <div class="shrinkImage flexItem mb-4 ">
+               <img src="../public/IMG/ozoudWatterfall.jpeg" alt="">
+           </div>
+           <div class="flexItem mb-4">
+               <img src="../public/IMG/binlwidiane.jpg" alt="">
+           </div>
+       </div>
+   </section>
+
+   <section class="Book container mb-4">
+       <div>
+            <div class="ornament ">
+                <div class="ornamentLine"></div>
+                <div class="ornamentoctagon"></div>
+            </div>
+           <h3 >Book a Stay</h3>
+           <form action="">
+            
+              <svg id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:none;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" fill="none" stroke="#e4ca95" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(199.551 50 50)">
+                  <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                </circle>
+              </svg>
+              <div class="flash succes">Thank you for your message. We will come back to you in the nearest time.</div>
+            
+              <div class="formgroup">
+                <div class="flatPicker">
+                    <div class="flatPicker__months">
+                        <span class="flatPicker__prev_month flatPicker__control">
+                            <svg class="flatPicker__control" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path></svg>
+                        </span>
+                        <div class="flatPicker__month">
+                            <div class="flatPicker__current_month">
+                                <select class="flatpickr__monthDropdown flatPicker__control" >
+                                    <option class="flatpickr__monthDropdown__option" value="0"  >January   </option>
+                                    <option class="flatpickr__monthDropdown__option" value="1"  >February  </option>
+                                    <option class="flatpickr__monthDropdown__option"  value="2"  >March     </option>
+                                    <option class="flatpickr__monthDropdown__option" value="3"  >April     </option>
+                                    <option class="flatpickr__monthDropdown__option" value="4"  >May       </option>
+                                    <option class="flatpickr__monthDropdown__option" value="5" selected >June      </option>
+                                    <option class="flatpickr__monthDropdown__option" value="6"  >July      </option>
+                                    <option class="flatpickr__monthDropdown__option" value="7"  >August    </option>
+                                    <option class="flatpickr__monthDropdown__option" value="8"  >September </option>
+                                    <option class="flatpickr__monthDropdown__option" value="9"  >October   </option>
+                                    <option class="flatpickr__monthDropdown__option" value="10" >November  </option>
+                                    <option class="flatpickr__monthDropdown__option" value="11" >December  </option>
+                                </select>
+                                <div class="numInputWrapper">
+                                    <input class="numInput cur-year flatPicker__control" type="number" value="2020" tabindex="-1" aria-label="Year">
+                                    <span class="arrowUp"></span>
+                                    <span class="arrowDown"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="flatPicker__next_month flatPicker__control">
+                            <svg class="flatPicker__control" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg>
+                        </span>
+                    </div>
+                     <div class="flatPicker__inner">
+                         <div class="flatPicker__weekdays">
+                             <span class="weekday">Sun</span>
+                             <span class="weekday">Mon</span>
+                             <span class="weekday">Tus</span>
+                             <span class="weekday">Wed</span>
+                             <span class="weekday">Thu</span>
+                             <span class="weekday">Fri</span>
+                             <span class="weekday">Sat</span>
+                         </div>
+                         <div class="flatPicker__days">
+                               <div class="flatPicker__daysContainer">
+                               </div>
+                         </div>
+                     </div>
+                </div>
+                  <div class="input"><button id="arrivalBtn">Arrival Date</button></div>
+                  <div class="input"><button id="departureBtn">Departure Date</button></div>
+              </div>
+
+              <div class="formgroup">
+                  <div class="input">
+                      <input  id="name" placeholder="Name">
+                      <div class="invalide">Name is required</div>
+                  </div>
+                  <div class="formgroup__sub">
+                      <div class="count">
+                        <div>
+                            <div class="number underline_Transitioned">0</div>
+                            <div class="number underline_Transitioned">1</div>
+                            <div class="number underline_Transitioned">2</div>
+                            <div class="number underline_Transitioned">3</div>
+                            <div class="number underline_Transitioned">4</div>
+                            <div class="number underline_Transitioned">5</div>
+                        </div>
+                      </div>
+                      <div class="input">
+                          <button id="adultsSelect"> Adults</button>
+                          <div class="invalide">Choose number</div>
+                        </div>
+                      <div class="input">
+                          <button id="childernSelect">Childern</button>
+                          <div class="invalide">Choose number</div>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="formgroup">
+                  <div class="input">
+                      <input id="email" type="email" placeholder="Email">
+                      <div class="invalide">email is required</div>
+                    </div>
+                  <div class="input">
+                      <input id="phoneNumber" type="text" placeholder="Phone Number">
+                      <div class="invalide">phone Number is required</div>
+                    </div>
+              </div>
+
+              <div class="formgroup">
+                    <div class="input">
+                      <textarea id="message" placeholder="Message"></textarea>
+                    </div>
+              </div>
+
+              <div class="formgroup">
+                 <div class="input"><input type="submit" value="Book Now" id="submit" class="blackBtn"></input></div>
+              </div>
+
+           </form>
+       </div>
+   </section>
+   <footer class="mt-4">
+        <div class="footerInfo">
+          <div class="scrollTop">
+            <div>
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+          </div>
+          <div class="container">
+            <div class="flexx justify-start mb-4">
+                <div class="mb-3">
+                    <a href="#" class="" >
+                        <img src="./IMG/logo.svg" alt="" width="140">
+                    </a>
+                </div>
+                <div class="contact mb-3">
+                    <address>
+                        <p >Phone : <a href="tel:  +41 22 779 33 33" > <span class=" underlineSocial underline_Transitioned ">+41 22 779 33 33</span> </a></p>
+                        <p>Email:  <a href="mailto:  info@ultimacollection.com" class=" underlineSocial underline_Transitioned">  info@ultimacollection.com</a> </p>
+                    </address>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="rights">
+                <div class="By">Designed By 
+                    <span class="accent">Said Fatah</span> & 
+                    <span class="accent">Abdelgahfour Chouai</span> 
+                </div>
+            </div>
+          </div>
+        </div>
+   </footer>
+
+   <script src="./JS/main.bundle.js"></script>
+
+</body>
+</html>

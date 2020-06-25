@@ -1,0 +1,6 @@
+require('./book')
+require('./gallery')
+require('./ornamentLines')
+require('./scroll')
+require('./scroolTo')
+require('./video')

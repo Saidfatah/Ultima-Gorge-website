@@ -1,0 +1,11 @@
+.flash{
+    display: none;
+    border:1px solid green;
+    background-color: rgba(50, 214, 50, 0.562);
+    padding: .5rem .25rem;
+}
+.succes{
+    border-color: green;
+    background-color: rgba(50, 214, 50, 0.562);
+}
+

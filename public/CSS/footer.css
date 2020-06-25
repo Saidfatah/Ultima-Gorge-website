@@ -1,0 +1,91 @@
+footer{
+    padding-top:4rem ;
+    background-color: var(--colorSecondary);
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.contact a{
+    font-size: 1rem;
+    color:var(--colorPrimaryLignt)
+}
+.contact p{
+    line-height: 2em;
+}
+
+.social i{
+ font-size: 1.5rem;
+ margin-right: 1rem;
+ color:#fff;
+
+}
+.social i:hover{
+ color:var(--colorPrimaryLignt)
+}
+
+.By{
+ text-align: center;
+ color: #fff;
+ margin: .5rem;
+}
+
+.scrollTop{
+    cursor: pointer;
+    position: absolute;
+    border: 1px solid var(--colorPrimaryLignt);
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    right: 10%;
+    text-align: center;
+    opacity: .7;
+    background-color: transparent;
+    transform: rotate(45deg) translateY(-50%);
+}
+.scrollTop:hover {
+    opacity: 1;
+}
+.scrollTop:hover  div i{
+    left: 45%;
+    top: 45%;
+
+}
+.scrollTop div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+ 
+}
+.scrollTop div i{
+    transition: var(--transition);
+    color:var(--colorPrimaryLignt);
+    position: absolute;
+    font-size: 1rem;
+    transform:  translate(-50% ,-50%) rotate(-45deg);
+    top: 50%;
+    left: 50%;
+ 
+}
+
+
+address p{
+    position: relative;
+}
+.underlineSocial{
+    position: relative;
+    overflow: hidden;
+
+    color:var(--colorPrimaryLignt);
+    width: 150px;
+}
