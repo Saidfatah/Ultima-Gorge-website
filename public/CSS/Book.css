@@ -162,3 +162,17 @@
     color: #fff;
     transition: all .3s ease-out;
 }
+
+.labelDate{
+    position: absolute;
+    z-index: 9;
+    top: 16px;
+    left:16px;
+    transition: var(--transition2);
+}
+.flatPickerToogle{
+  padding-top: 2rem;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}

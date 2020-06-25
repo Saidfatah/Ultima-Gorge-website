@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./CSS/Book.css">
     <link rel="stylesheet" href="./CSS/flash.css">
     <link rel="stylesheet" href="./CSS/flatPicker.css">
+    <link rel="stylesheet" href="./CSS/Unforgettable.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/403c0ed747.js" crossorigin="anonymous"></script>
@@ -224,6 +225,28 @@
            </div>
        </div>
    </section>
+   <section class="Unforgettable container mb-4">
+       <img class="bigImage" src="./IMG//flowers.png" alt="">
+       <div class="imageSlide">
+           <div class="imageSlide__btns">
+            <button class="imageSlide__btn  imageSlide__btn_prev" data-swiper-prev="" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="imageSlide__btn  imageSlide__btn_next swiper-button-disabled" data-swiper-next="" tabindex="0" role="button" aria-label="Next slide" aria-disabled="true">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+           </div>
+           <div class="imageSlide__container">
+              
+               <div class="imageSlide__image img1">
+                   <img src="./IMG/hotub.jpg" alt="">
+               </div>
+               <div class="imageSlide__image  img2">
+                   <img src="./IMG/jetski-1.jpg" alt="">
+               </div>
+           </div>
+       </div>
+   </section>
 
    <section class="Book container mb-4">
        <div>
@@ -290,8 +313,14 @@
                          </div>
                      </div>
                 </div>
-                  <div class="input"><button id="arrivalBtn">Arrival Date</button></div>
-                  <div class="input"><button id="departureBtn">Departure Date</button></div>
+                  <div class="input">
+                      <span class="labelDate"  id="arrivalLabel">Arrival Date</span>
+                      <button class="flatPickerToogle" id="arrivalBtn"></button>
+                    </div>
+                  <div class="input">
+                      <span class="labelDate"  id="departureLabel">Departure Dat</span>
+                      <button class="flatPickerToogle" id="departureBtn"></button>
+                    </div>
               </div>
 
               <div class="formgroup">
@@ -345,6 +374,7 @@
            </form>
        </div>
    </section>
+
    <footer class="mt-4">
         <div class="footerInfo">
           <div class="scrollTop">

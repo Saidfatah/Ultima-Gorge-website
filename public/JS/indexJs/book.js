@@ -9,6 +9,8 @@ module.exports = (function () {
     const form           = query('form')
     const name           = query('#name')
     const flatPicker     = query('.flatPicker')
+    const arrivalLabel   = query('#arrivalLabel')
+    const departureLabel = query('#departureLabel')
     const departureBtn   = query('#departureBtn')
     const arrivalBtn     = query('#arrivalBtn')
     const email          = query('#email')
@@ -23,18 +25,19 @@ module.exports = (function () {
     const submit         = query('#submit')
     //#endregion 
     //#region inits
-    let adultsCount   = 1;
-    let ChildernCount = 0;
-    let arrivaldate   = '';
-    let departuredate = '';
+    let adultsCount   = 1
+    let ChildernCount = 0
+    let arrivaldate   = ''
+    let departuredate = ''
+    let isArrival     =true
     let emailValue    =''
     let nameValue     =''
     let msgValue      =''
     let phoneValue    =''
     let clickedBtnflatPickerToogle=null
-    let selectAdultsCount  = false; 
-    let selectChildernCount= false; 
-    let selectIsAdults= true; 
+    let selectAdultsCount  = false
+    let selectChildernCount= false
+    let selectIsAdults= true 
     //#endregion
 
    //event handlers
@@ -136,6 +139,16 @@ module.exports = (function () {
         flatPicker.style.opacity='0'
       }
     }
+    const pickDate=e=>{
+      if(e.target.classList.contains('flatPicker__day') )
+      {
+          if(!e.target.classList.contains('disabled')){
+            clickedBtnflatPickerToogle.innerHTML=e.target.getAttribute('area_labe')
+            if(isArrival) arrivalLabel.style.top='0px'
+            else departureLabel.style.top='0px'
+          }
+      } 
+     }
     //local helper functions 
     const apiPostCall    =()=>{
       loader.style.display='block'
@@ -169,16 +182,7 @@ module.exports = (function () {
        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) return true
        return false
     }
-    const pickDate=e=>{
-      if(e.target.classList.contains('flatPicker__day') )
-      {
-          if(!e.target.classList.contains('disabled')){
 
-            clickedBtnflatPickerToogle.innerHTML=e.target.getAttribute('area_labe')
-            console.log(e.target.getAttribute('area_labe'))
-          }
-      } 
-  }
     //event listners
     departureBtn.addEventListener('click',showFlatPicker)
     arrivalBtn.addEventListener('click',showFlatPicker)

@@ -1,0 +1,91 @@
+.Unforgettable {
+    position: relative;
+}
+.Unforgettable .bigImage{
+    width: 100%;
+}
+
+.imageSlide{
+    position: relative;
+    height:100vh;
+
+}
+.imageSlide__container{
+    top: 0;
+    left: 0;
+    width: 90%;
+}
+
+.imageSlide__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    overflow: hidden;
+}
+
+.img1{
+    z-index: 60;
+    left: 0;
+}
+.img2{
+    right: 0;
+    z-index: 70;
+}
+
+.scaleIn{
+    animation: scaleIn .3s ease-out forwards;
+
+}  
+.scaleOut{
+    animation: scaleOut .3s ease-out forwards; 
+}
+
+@keyframes scaleIn{
+   0%{
+       transform: scale(.8);
+   }
+   100%{
+       transform: scale(1);
+   }
+}
+@keyframes scaleOut{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}
+
+
+.imageSlide__image img{
+    width: 1200px
+
+}
+
+.imageSlide__btns{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 100;
+}
+
+.imageSlide__btn:hover  i {
+    transform: scale(1.1);
+}
+.imageSlide__btn i {
+    transition: var(--transtion);
+}
+.imageSlide__btn {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    color: currentColor;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    line-height: 4rem;
+    text-align: center;
+}
