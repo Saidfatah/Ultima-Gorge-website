@@ -1,28 +1,41 @@
+const {query}= require('../utils/short')
 module.exports = (function () {
     const axios =require('axios')
-    const bookings__Table =document.getElementById('bookings__Table')
-
+    const bookings__Table_body = query("#table_body")
+    const loader = query('.loaderGif')
     const loadBookings=(bookings)=>{
-      console.log(bookings)
-      bookings.forEach(element => {
-       const {name,phone,email,msg,arrivalDate,departureDate,adults,childern}=element
-       const booking = `<tr data_email="${email}">
-             <td> ${name}</td>
-             <td> ${arrivalDate}</td>
-             <td> ${departureDate}</td>
-             <td> ${adults}</td>
-             <td> ${childern}</td>
-             <td> <span class="action" id="contact"><i class="fas fa-reply-all"></i>Contact</span></td>
-             <td> <span class="action" id="more"><i class="fas fa-ellipsis-h"></i>more..</span></td>
-            </tr>`
-            bookings__Table.innerHTML += booking
-
-      });
+      setTimeout(() => {
+        loader.style.display='none'
+        bookings.forEach(element => {
+           const {id,name,phone,email,msg,arrivalDate,departureDate,adults,childern}=element
+           const booking = `<tr data_email="${email}">
+               <td> ${name}</td>
+               <td> ${arrivalDate}</td>
+               <td> ${departureDate}</td>
+               <td> ${adults}</td>
+               <td> ${childern}</td>
+               <td> <span class="action"
+                          id="contact"
+                          data_phone ="${phone}" 
+                          data_email="${email}"
+                          ><i class="fas fa-reply-all"></i>Contact</span></td>
+               <td> <span class="action" 
+                          id="readMore" 
+                          data_id="${id}"
+                          ><i class="fas fa-ellipsis-h"></i>more..</span></td>
+              </tr>`
+           bookings__Table_body.innerHTML += booking
+        });
+      }, 5000);
+     
     }
-
-    axios.get('http://localhost:4000/bookings', )
+    const onApiSucces =(data)=>{
+        loadBookings(data)
+    }
+    axios.get('http://localhost:4000/bookings' )
       .then(function (response) {
-        loadBookings(response.data)
+        
+        onApiSucces(response.data)
       })
       .catch(function (error) {
         console.log(error);

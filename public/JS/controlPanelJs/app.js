@@ -1,2 +1,3 @@
-require('./bookings')
+require('./bookingsRouter')
 require('./login')
+require('./bookings')
