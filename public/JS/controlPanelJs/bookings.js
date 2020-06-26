@@ -33,13 +33,13 @@ module.exports = (function () {
         loadBookings(data)
     }
     axios.get('http://localhost:4000/bookings' )
-      .then(function (response) {
+         .then(function (response) {
         
         onApiSucces(response.data)
-      })
-      .catch(function (error) {
+         })
+         .catch(function (error) {
         console.log(error);
-      });
+         });
 
   
     

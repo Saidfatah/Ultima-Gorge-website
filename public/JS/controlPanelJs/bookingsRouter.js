@@ -1,4 +1,5 @@
 const {event,pd,query,SubQuery}= require('../utils/short')
+const renderMore= require('../controlPanelJs/readMore')
 module.exports = (function () {
    const bookings__table      = query('.bookings__table')
    const bookings__readMore   = query('.bookings__readMore')
@@ -10,14 +11,23 @@ module.exports = (function () {
    const statisticsBtn        = query('.NavBarPhone')
    const bookingsBtn          = query('.NavBarBookNow')
    const logoutBtn            = query('.navBarLocation')
-   
    const views=[bookings__table ,bookings__readMore,bookings__contact,bookings__statistics]
+
+
    const tableClick    = e =>{
         pd(e)
         if(e.target.id == 'readMore')
-            refreshRoutes('bookings__readMore')
+           {
+               refreshRoutes('bookings__readMore')
+               const bookingId = e.target.getAttribute('data_id')
+               renderMore(bookingId)
+           }
         else if(e.target.id == 'contact')
-            refreshRoutes('bookings__contact')
+           {
+               refreshRoutes('bookings__contact')
+               const bookingPhone = e.target.getAttribute('data_phone')
+               const bookingEmail = e.target.getAttribute('data_email')
+           }
    }
    const BookingsRoute = e=>{
         pd(e)

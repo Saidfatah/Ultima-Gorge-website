@@ -44,6 +44,9 @@ module.exports = (function () {
           heroText.classList.add('hide')
           loginFromContainer.classList.add('hide')
           AuthGuard.classList.remove('hide')
+          flash.style.display='none'
+          userName.value=''
+          password.value=''
     }
     const onLoggingFail=()=>{
          setTimeout(() => {

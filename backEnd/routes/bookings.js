@@ -56,7 +56,24 @@ let bookings = [
       childern:0,
       arrivalDate:'August 1,2020',
       departureDate:'August10,2020',
-      msg:'men derb sultan issam mlashi fenan , mashi mn derb trap el beldi '
+      msg:`Men Derb Sultan, Issam fennan fuck Mirikan
+      Men derb trap lbeldi jebna l3ezz f Motobécane
+      Nhar ntzewjo l3a9a ndiro story 3ya9a f voiture Mégane
+      Sa7bi dégage, we9tek sala 3berna sikan
+      9sserna Segane bach ga3ma ntkhettaw charrek, mchina pédale
+      F rejli 9itan, tbe3tini skhefti f cinquième étage
+      Allô allô what you want PRADA Channel
+      Skhefti f quartier dima mhaybin b Versace jean
+      Sayg w homa f blayss'hom, Issam ma 3endo price
+      La3eb 3lihom Tyson, f lekher ana li fayz
+      Ghadiyn mroulé, ma 3reftch imta gha netsayeb
+      Ana w s7abi mroublin, ra jamais nhezo raya
+      F'had rap mnoumrine ga3 li dekhlo b l7aya
+      La doubelt l3a9a 3refni 7sebtha f mraya
+      Aji bouss l'wawa kho s7aybtk ga3 ma m3aya
+      Estafette jaya wraya, khellitha tghawet ya ya
+      Skrr skrr skrr, ya ya, skrr skrr
+      Ya ya, ya ya…`
     }
 ]
 
@@ -75,7 +92,9 @@ route.get('/',(req,res)=>{
   res.json(bookings)
 })
 route.get('/:id',(req,res)=>{
-    res.json(tasks)
+    const id = req.params.id
+    const singleBooking = bookings.filter(booking=> booking.id == id)
+    res.json(singleBooking[0])
 })
 route.put('/:id',(req,res)=>{
     console.log(req.body.newTitle)
