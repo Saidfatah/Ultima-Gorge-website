@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./CSS/flash.css">
     <link rel="stylesheet" href="./CSS/flatPicker.css">
     <link rel="stylesheet" href="./CSS/Unforgettable.css">
+    <link rel="stylesheet" href="./CSS/imageSlider.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/403c0ed747.js" crossorigin="anonymous"></script>
@@ -202,7 +203,7 @@
       
    </section>
 
-   <section class="Gallery container">
+   <!-- <section class="Gallery container">
        <h3 ><span > Ultima Gorge</span></h3>
        <div class="flexx">
            <div class="flexItem mb-4 mt-4">
@@ -224,9 +225,9 @@
                <img src="../public/IMG/binlwidiane.jpg" alt="">
            </div>
        </div>
-   </section>
-   <section class="Unforgettable container mb-4">
-       <img class="bigImage" src="./IMG//flowers.png" alt="">
+   </section> -->
+   <section class="Unforgettable  mb-4">
+       <!-- <img class="bigImage" src="./IMG//flowers.png" alt=""> -->
        <div class="imageSlide">
            <div class="imageSlide__btns">
             <button class="imageSlide__btn  imageSlide__btn_prev" data-swiper-prev="" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false">
@@ -239,13 +240,45 @@
            <div class="imageSlide__container">
               
                <div class="imageSlide__image img1">
-                   <img src="./IMG/hotub.jpg" alt="">
+                   <img src="./IMG/flowers.png" alt="">
                </div>
                <div class="imageSlide__image  img2">
-                   <img src="./IMG/jetski-1.jpg" alt="">
+                   <img src="./IMG/Restaurants-Ouzoud-Waterfalls.jpg" alt="">
                </div>
            </div>
        </div>
+       <div class="Unforgettable__experiences container">
+           
+           <div class="Unforgettable_experiences_left">
+               <img src="./IMG/hotub.jpg" alt="">
+               <h2> Ultima Beach</h2>
+               <p>
+                The 24m yacht is manned by a captain and a chef. It can host 12 guests at one time for day trips, and seven guests for overnight trips in one twin, one pullman and two double master cabins.
+                The yacht comes fully equipped with Ultima standard mod cons, air-conditioning, and sea ‘toys’ including snorkelling equipment and a Zodiac Tender 3.80.
+               </p>
+               <p class="mt-1">
+                The yacht comes fully equipped with Ultima standard mod cons, air-conditioning, and sea ‘toys’ including snorkelling equipment and a Zodiac Tender 3.80.
+               </p>
+           </div>
+           <div class="Unforgettable_experiences_right">
+               <div class="Unforgettable_columnFill"></div>
+               <h1 class=" mb-3"><span class="accent underline">Unforgettable</span> experiences</h1>
+               <img src="./IMG/binlwidiane.jpg" alt="">
+
+               <p>
+                The ultimate opulence, guests can enjoy exclusive access to the villa’s 24m yacht Ultima Beach to charter at their desire throughout their stay. Unquestionably the most indulgent and unparalleled way to discover the turquoise waters and unspoilt wilderness of the Corfu coastline.
+                With gourmet cuisine served on board, Ultima Beach offers an immersive excursion, indulging guests’ every desire. Romantic sunset cruises, exciting and adventurous day trips snorkelling in remote spots or lazy sun-soaked days await guests, making for a truly unforgettable experience.
+               </p>
+                <img src="./IMG/hotub.jpg" alt="">
+                <p>
+                    Explore the picturesque seaside villages of the ancient Greek island, hidden islets and wild natural landscapes. The villa’s personal concierge will be on hand throughout the stay, and can arrange private excursions to some of the island’s most beautiful spots:
+                    Land expeditions: Corfu and its surroundings are famous for their UNESCO World Heritage Sites, Corfu's imposing palaces and charming squares, ancient ruins, culinary discoveries.
+                    Sea expeditions: beach, water sports, remote sandy coves, cruise in the hidden islets, diving, snorkelling, picnic, water taxi, romantic dinner.
+                </p>
+                
+           </div>
+       </div>
+      
    </section>
 
    <section class="Book container mb-4">
@@ -255,7 +288,7 @@
                 <div class="ornamentoctagon"></div>
             </div>
            <h3 >Book a Stay</h3>
-           <form action="">
+           <form >
             
               <svg id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:none;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
                 <circle cx="50" cy="50" fill="none" stroke="#e4ca95" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(199.551 50 50)">
@@ -316,10 +349,12 @@
                   <div class="input">
                       <span class="labelDate"  id="arrivalLabel">Arrival Date</span>
                       <button class="flatPickerToogle" id="arrivalBtn"></button>
+                      <div class="invalide">Name is required</div>
                     </div>
                   <div class="input">
                       <span class="labelDate"  id="departureLabel">Departure Dat</span>
                       <button class="flatPickerToogle" id="departureBtn"></button>
+                      <div class="invalide">Name is required</div>
                     </div>
               </div>
 

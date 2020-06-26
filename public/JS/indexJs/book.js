@@ -29,7 +29,9 @@ module.exports = (function () {
     let ChildernCount = 0
     let arrivaldate   = ''
     let departuredate = ''
-    let isArrival     =true
+    let isArrival     = true
+    let arrivalValue      =''
+    let departureValue    =''
     let emailValue    =''
     let nameValue     =''
     let msgValue      =''
@@ -88,13 +90,13 @@ module.exports = (function () {
       nameValue  =name.value
       phoneValue =phoneNumber.value
 
-     
-
-      if(nameValue =='' || phoneValue =='' || emailValue =='' ||  !selectAdultsCount || !selectChildernCount)
+      if(nameValue =='' || phoneValue =='' || emailValue =='' || arrivalValue =='' || departureValue =='' ||  !selectAdultsCount || !selectChildernCount)
       {
         if(emailValue =='')invalideInput(email) 
         if(nameValue =='')invalideInput(name) 
         if(phoneValue =='')invalideInput(phoneNumber) 
+        if(departureValue =='')invalideInput(phoneNumber) 
+        if(arrivalValue =='')invalideInput(phoneNumber) 
         if(!selectAdultsCount)invalideInput(adultsSelect) 
         if(!selectChildernCount)invalideInput(childernSelect) 
       }else
@@ -143,9 +145,16 @@ module.exports = (function () {
       if(e.target.classList.contains('flatPicker__day') )
       {
           if(!e.target.classList.contains('disabled')){
-            clickedBtnflatPickerToogle.innerHTML=e.target.getAttribute('area_labe')
-            if(isArrival) arrivalLabel.style.top='0px'
-            else departureLabel.style.top='0px'
+            const pickedDtae= e.target.getAttribute('area_labe')
+            clickedBtnflatPickerToogle.innerHTML=pickedDtae
+            if(isArrival){ 
+              arrivalLabel.style.top='0px'
+              arrivalValue=pickedDtae
+            }
+            else {
+              departureLabel.style.top='0px'
+              departureValue=pickedDtae
+            }
           }
       } 
      }
@@ -159,8 +168,8 @@ module.exports = (function () {
           msg:msgValue,
           adults:adultsCount,
           childern:ChildernCount,
-          arrivalDate:'10/15/2020',
-          departureDate:'20/12/2020'
+          arrivalDate:arrivalValue,
+          departureDate:departureValue
          })
          .then(res=>{
                console.log(res.data)

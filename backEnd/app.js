@@ -4,6 +4,8 @@ const bodyParser = require('body-parser')
 const moongose = require('mongoose')
 const usersRoute = require('./routes/users')
 const bookingsRoute = require('./routes/bookings')
+const {transporter} = require('./util/sendMail')
+const {mailOptions} = require('./util/sendMail')
 const app =express()
 
 const corsOptions = {
@@ -16,6 +18,12 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 app.get('/',(req,res)=>{
     res.json("home")
+})
+app.post('/',(req,res)=>{
+    transporter.sendMail(mailOptions, (error, info)=>{
+        if (error) return res.json(error)
+        res.json('Email sent: ' + info.response)
+    });
 })
 app.use('/users',usersRoute)
 app.use('/bookings',bookingsRoute)

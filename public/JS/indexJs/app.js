@@ -1,5 +1,5 @@
 require('./book')
-require('./gallery')
+// require('./gallery')
 require('./scroll')
 require('./scroolTo')
 require('./video')

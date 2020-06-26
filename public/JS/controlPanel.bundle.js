@@ -436,7 +436,7 @@ eval("__webpack_require__(/*! ./bookings */ \"./public/JS/controlPanelJs/booking
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = (function () {\r\n    const axios =__webpack_require__(/*! axios */ \"./node_modules/axios/index.js\")\r\n    console.log(axios)\r\n}());\n\n//# sourceURL=webpack://axios/./public/JS/controlPanelJs/bookings.js?");
+eval("module.exports = (function () {\r\n    const axios =__webpack_require__(/*! axios */ \"./node_modules/axios/index.js\")\r\n    const bookings__Table =document.getElementById('bookings__Table')\r\n\r\n    const loadBookings=(bookings)=>{\r\n      console.log(bookings)\r\n      bookings.forEach(element => {\r\n       const {name,phone,email,msg,arrivalDate,departureDate,adults,childern}=element\r\n       const booking = `<tr data_email=\"${email}\">\r\n             <td> ${name}</td>\r\n             <td> ${phone}</td>\r\n             <td> ${email}</td>\r\n             <td> ${msg}</td>\r\n             <td> ${arrivalDate}</td>\r\n             <td> ${departureDate}</td>\r\n             <td> ${adults}</td>\r\n             <td> ${childern}</td>\r\n             <td> <span><i class=\"fas fa-compass\"></i></span></td>\r\n            </tr>`\r\n            bookings__Table.innerHTML += booking\r\n\r\n      });\r\n    }\r\n\r\n    axios.get('http://localhost:4000/bookings', )\r\n      .then(function (response) {\r\n        loadBookings(response.data)\r\n      })\r\n      .catch(function (error) {\r\n        console.log(error);\r\n      });\r\n\r\n  \r\n    \r\n}());\n\n//# sourceURL=webpack://axios/./public/JS/controlPanelJs/bookings.js?");
 
 /***/ })
 

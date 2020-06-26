@@ -196,10 +196,10 @@
 
 
 
-.selected{ color: #fff;background-color: #4f99ff;}
-.selected2{ color: #fff; background-color: #ee954d;}
-.selected:hover{  color: #fff;background-color: #4f99ff;}
-.selected2:hover{  color: #fff;background-color: #ee954d;}
+.selected{ color: #fff;background-color: var(--colorPrimary);}
+.selected2{ color: #fff; background-color: var(--colorPrimary)}
+.selected:hover{  color: #fff;background-color:var(--colorPrimary)}
+.selected2:hover{  color: #fff;background-color: var(--colorPrimary)}
 
 .bettwen{
     color: #fff; background-color: #e9bb95; 

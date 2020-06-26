@@ -1,18 +1,20 @@
-.Book {
+.Book:not(.auth) {
    padding-left: 14rem;
    padding-right: 14rem;
+  
 }
 .Book h3{
   font-size: 2.5rem;
 }
 .Book> div{
     position: relative;
-   padding-top  : 4rem;
-
+    padding-top  : 4rem;
+    box-shadow: var(--shadowLight) ;
+   
     background-color: #fff;
     width: 100%;
 }
-.Book form{
+form{
     width: 100%;
     position: relative;
     height: fit-content;
@@ -107,7 +109,7 @@
   margin-top: 2rem;
 }
 
-.formgroup:last-child  input {
+.formgroup:last-child:not(.auth)  input {
     background-color: var(--colorSecondary);
     color: #fff;
     text-align: center;
@@ -115,19 +117,18 @@
     line-height: 2em;
     cursor: pointer;
     font-size: 1.5rem;
-
     font-family: freight-big-pro,serif;
 
 }
-.formgroup:last-child .input {
+.formgroup:last-child:not(.auth) .input {
     flex: 1;
 }
 
-.formgroup:last-child  .input input:hover {
+.formgroup:last-child:not(.auth)  .input input:hover {
     color: var(--colorPrimary);;
 
 }
-.formgroup:last-child  .input::after ,.formgroup:last-child .input::before  {
+.formgroup:last-child:not(.auth)  .input::after ,.formgroup:last-child:not(.auth) .input::before  {
     background-color: transparent;
 }
 
