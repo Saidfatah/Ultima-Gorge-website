@@ -1,17 +1,16 @@
-const {query}= require('../utils/short')
+const {query,SubQuery}= require('../utils/short')
 module.exports= function renderContact(bookingEmail,bookingPhone)
 {
-  //call post api to use email sender in backend 
-  //make htmlTemplate for phone call 
-  //render html 
-  const bookings__contact    = query('.bookings__contact')
-  bookings__contact.innerHTML += bookingContactHtml()
-  const bookingContactHtml =()=>{
-    return `
-       <div> ${bookingEmail}  </div>
-       <div> ${bookingPhone} </div>
-    `
-  }
+  const clientPhone = query('#clientPhone')
+  const clientPhone_span =SubQuery(clientPhone,'span') 
+  const clientEmail = query('#clientEmail')
+
+
+  clientPhone.href=`tel:  +${bookingPhone}`
+  clientEmail.href=`mailto: +${bookingEmail}`
+
+  clientEmail.innerHTML=bookingEmail
+  clientPhone_span.innerHTML='+'+bookingPhone
 }
 
 

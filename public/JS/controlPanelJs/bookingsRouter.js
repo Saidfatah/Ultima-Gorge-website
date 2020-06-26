@@ -1,5 +1,6 @@
 const {event,pd,query,SubQuery}= require('../utils/short')
 const renderMore= require('../controlPanelJs/readMore')
+const renderContact= require('../controlPanelJs/contactClient')
 module.exports = (function () {
    const bookings__table      = query('.bookings__table')
    const bookings__readMore   = query('.bookings__readMore')
@@ -27,6 +28,7 @@ module.exports = (function () {
                refreshRoutes('bookings__contact')
                const bookingPhone = e.target.getAttribute('data_phone')
                const bookingEmail = e.target.getAttribute('data_email')
+               renderContact(bookingEmail,bookingPhone)
            }
    }
    const BookingsRoute = e=>{
