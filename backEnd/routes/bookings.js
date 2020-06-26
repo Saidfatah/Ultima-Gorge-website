@@ -69,6 +69,8 @@ const newBooking = (obj)=>{
 
 route.use(bodyParser.json())
 route.use(bodyParser.urlencoded({extended:false}))
+
+
 route.get('/',(req,res)=>{
   res.json(bookings)
 })

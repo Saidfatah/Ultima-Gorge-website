@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/bookings.css">
+    <link rel="stylesheet" href="./CSS/controlPanel/bookings.css">
     <link rel="stylesheet" href="./CSS/Book.css">
     <link rel="stylesheet" href="./CSS/hero.css">
     <link rel="stylesheet" href="./CSS/navBar.css">
-    <link rel="stylesheet" href="./CSS/controlPanel.css">
+    <link rel="stylesheet" href="./CSS/flash.css">
+    <link rel="stylesheet" href="./CSS/controlPanel/controlPanel.css">
     <script src="https://kit.fontawesome.com/403c0ed747.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
@@ -19,92 +20,91 @@
 </head>
 <body style="height: 100vh;overflow: hidden;">
     <div class="admin">
-        <div class="protected">
-            <div class="navBar">
-                <div class="navBarfill"></div>
-                <div class="navBar__content">
-                    <a href="#" class="navBarLocation flexCenter navBtn slideUpColors ">
-                        <span class="roll">
-                          <span class="Btntext">
-                             <span><span><i class="fas fa-compass"></i></span>Logout</span>
-                          </span>
-                        </span>
-                     </a>
-                    <a href="#" class="logo slideUpColors">
-                     <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.93 170.74" width='178px' height='180px'>
-                         <path class="logoIcon" d="M594.19,101.4a3.53,3.53,0,0,0,1.68-2.1H605a3.49,3.49,0,0,0,1.68,2.1,5,5,0,0,0-1.35,2.22h-9.77A5.13,5.13,0,0,0,594.19,101.4Zm-.44-21.06c.45,6.09,3.49,8.54,4.34,15.89-1.14-4.76-4-11-10.91-13-11-3.13-18.65,8.65-11.82,15.07a9.41,9.41,0,0,0,10.75,1.7c-4.3-1.43-3.7-9,3.21-7.86a9.23,9.23,0,0,1,6.46,5.71h4.64V63.43C600.23,63.69,593,70,593.75,80.34Zm1.82,24.75a3.37,3.37,0,0,1-.29.8c-1.18,2.25-3.2,4-5.94,3.65-3.83-.56-3.2-3.84-3.2-3.84-5.28,2.32-3.15,11.55,4.6,10,4.89-1,6.71-6.82,6.91-10.64Zm19.14.61s.63,3.28-3.2,3.84c-2.74.4-4.76-1.4-5.94-3.65a3,3,0,0,1-.29-.8h-4.86v21.49s5.27-1.91,5.62-6.08-1.79-6.44-2.89-12.71c1.08,3.41,3.13,7.2,7,7.94C617.86,117.25,620,108,614.71,105.7Zm-1.05-22.48c-7.77,2.21-9.81,9-10.53,14.62h1.94a9.23,9.23,0,0,1,6.46-5.71c6.91-1.17,7.51,6.43,3.21,7.86a9.41,9.41,0,0,0,10.75-1.7C632.31,91.87,624.69,80.09,613.66,83.22Z" transform="translate(-61.15 -63.43)"></path>
-                         <path class="logoText" d="M485.63,173.76c0,3.39,2,4.43,2,4.43v.36h-24.8v-.36s2-1,2-4.43V97.65a5.93,5.93,0,0,1,5.92-5.93h16.85v.36s-2,1-2,4.43ZM413.56,96.15a7.6,7.6,0,0,0-6.91-4.43h-19.5v.34a10,10,0,0,1,4.21,4.88l37.7,81.61h.34l11.07-24.15Zm-2.05,82.06s-5.5-3.59-12.36-11.9a73.45,73.45,0,0,1-9.84-15H389v22.47c0,3.39-2,4.43-2,4.43v.36h24.57ZM83.92,154.3V98.49a6.77,6.77,0,0,0-6.77-6.77h-16v.36s2,1,2,4.43v46.23c0,27.95,17.48,35.81,33.09,35.81v-.26C94.06,178.29,83.92,173.79,83.92,154.3Zm56.79-62.58v.36s-2,1-2,4.43v46.23c0,27.95-17.49,35.81-33.1,35.81v-.26c2.22,0,12.36-4.5,12.36-24V98.49a6.77,6.77,0,0,1,6.77-6.77Zm215.31,82V97.65a5.93,5.93,0,0,0-5.92-5.93H333.25v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S356,177.15,356,173.76Zm-173.28-82H165.9v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h22.77V97.65A5.93,5.93,0,0,0,182.74,91.72Zm43.38,59.57A88.75,88.75,0,0,1,198,178.21v.34h22.56a5.93,5.93,0,0,0,5.92-5.93V151.29Zm56.48,22.47v-82H261.86v82c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S282.6,177.15,282.6,173.76ZM231.67,97.65V119H232a66.28,66.28,0,0,1,10.27-15.23,69.91,69.91,0,0,1,13.43-11.69v-.34H237.59A5.93,5.93,0,0,0,231.67,97.65Zm74.74-5.93H288.3v.34a70.25,70.25,0,0,1,13.43,11.69A66.69,66.69,0,0,1,312,119h.34V97.65A5.93,5.93,0,0,0,306.41,91.72Zm214.45,59.57a7.63,7.63,0,0,0-6.8,4.18l-9,17.86c-1.87,3.7-4.1,4.88-4.1,4.88v.34h19.77a7.63,7.63,0,0,0,6.8-4.18l9.11-18a11.24,11.24,0,0,1,4-4.74v-.34ZM593,178.55H573.2a7.63,7.63,0,0,1-6.8-4.18l-30.95-61.13,11.32-22.36h.34l41.75,82.45c1.88,3.7,4.11,4.88,4.11,4.88Z" transform="translate(-61.15 -63.43)"></path>
-                     </svg>
-                     <div>gorge</div>
-                    </a>
-                    <a href="tel:  +41 22 779 33 33" class="NavBarPhone flexCenter navBtn slideUpColors">
-                        <span class="roll ">
-                            <span class="Btntext">
-                             <span><span><i class="fas fa-phone"></i></span> +212 54893201</span>
-                            </span>
-                        </span>
-                    </a>
-                    <a href="#" class="NavBarBookNow flexCenter navBtn slideUpColors">
-                        <span class="roll">
-                            <span class="Btntext">
-                             <span><span><i class="fas fa-angle-right"></i></span> Book Now</span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="hero">
             <img src="./IMG/09.png" alt="hotel" class="heroImage">
-            <div class="auth__heroText hide"><div class="heroText"> <span>Ultima Groge</span> </div></div>
-            <div class="Book auth hide ">
+            <div class="auth__heroText "><div class="heroText"> <span>Ultima Groge</span> </div></div>
+            <div class="Book auth">
                 <div>
-                    
                     <form class="form">
+                        <svg id="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:none;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <circle cx="50" cy="50" fill="none" stroke="#e4ca95" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(199.551 50 50)">
+                              <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                            </circle>
+                        </svg>
+                        <div class="flash error">password or username is inccorect </div>
                         <div class="formgroup ">
                            <div class="input">
-                               <input  id="name" placeholder="User Name">
+                               <input  id="userName" placeholder="User Name">
                                <div class="invalide">Name is required</div>
                            </div>
                            <div class="input">
-                               <input  id="name" placeholder="User Name">
+                               <input type="password"  id="password" placeholder="Password">
                                <div class="invalide">Password</div>
                            </div>
                         </div>
                         <div class="formgroup ">
-                                <div class="input"><input type="submit" value="Login" id="submit" class="blackBtn"></input></div>
+                                <div class="input"><input type="submit" value="Login" id="login" class="blackBtn"></input></div>
                         </div>
                    </form>
                 </div>
            </div>
         </div>
-       <div class="AuthGuard">
-           
+       <div class="AuthGuard hide">
+        <div class="navBar">
+            <div class="navBarfill"></div>
+            <div class="navBar__content">
+                <a href="#" class="navBarLocation flexCenter navBtn slideUpColors ">
+                    <span class="roll">
+                      <span class="Btntext">
+                         <span><span><i class="fas fa-sign-out-alt"></i></span>Logout</span>
+                      </span>
+                    </span>
+                 </a>
+                <a href="#" class="logo slideUpColors">
+                 <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566.93 170.74" width='178px' height='180px'>
+                     <path class="logoIcon" d="M594.19,101.4a3.53,3.53,0,0,0,1.68-2.1H605a3.49,3.49,0,0,0,1.68,2.1,5,5,0,0,0-1.35,2.22h-9.77A5.13,5.13,0,0,0,594.19,101.4Zm-.44-21.06c.45,6.09,3.49,8.54,4.34,15.89-1.14-4.76-4-11-10.91-13-11-3.13-18.65,8.65-11.82,15.07a9.41,9.41,0,0,0,10.75,1.7c-4.3-1.43-3.7-9,3.21-7.86a9.23,9.23,0,0,1,6.46,5.71h4.64V63.43C600.23,63.69,593,70,593.75,80.34Zm1.82,24.75a3.37,3.37,0,0,1-.29.8c-1.18,2.25-3.2,4-5.94,3.65-3.83-.56-3.2-3.84-3.2-3.84-5.28,2.32-3.15,11.55,4.6,10,4.89-1,6.71-6.82,6.91-10.64Zm19.14.61s.63,3.28-3.2,3.84c-2.74.4-4.76-1.4-5.94-3.65a3,3,0,0,1-.29-.8h-4.86v21.49s5.27-1.91,5.62-6.08-1.79-6.44-2.89-12.71c1.08,3.41,3.13,7.2,7,7.94C617.86,117.25,620,108,614.71,105.7Zm-1.05-22.48c-7.77,2.21-9.81,9-10.53,14.62h1.94a9.23,9.23,0,0,1,6.46-5.71c6.91-1.17,7.51,6.43,3.21,7.86a9.41,9.41,0,0,0,10.75-1.7C632.31,91.87,624.69,80.09,613.66,83.22Z" transform="translate(-61.15 -63.43)"></path>
+                     <path class="logoText" d="M485.63,173.76c0,3.39,2,4.43,2,4.43v.36h-24.8v-.36s2-1,2-4.43V97.65a5.93,5.93,0,0,1,5.92-5.93h16.85v.36s-2,1-2,4.43ZM413.56,96.15a7.6,7.6,0,0,0-6.91-4.43h-19.5v.34a10,10,0,0,1,4.21,4.88l37.7,81.61h.34l11.07-24.15Zm-2.05,82.06s-5.5-3.59-12.36-11.9a73.45,73.45,0,0,1-9.84-15H389v22.47c0,3.39-2,4.43-2,4.43v.36h24.57ZM83.92,154.3V98.49a6.77,6.77,0,0,0-6.77-6.77h-16v.36s2,1,2,4.43v46.23c0,27.95,17.48,35.81,33.09,35.81v-.26C94.06,178.29,83.92,173.79,83.92,154.3Zm56.79-62.58v.36s-2,1-2,4.43v46.23c0,27.95-17.49,35.81-33.1,35.81v-.26c2.22,0,12.36-4.5,12.36-24V98.49a6.77,6.77,0,0,1,6.77-6.77Zm215.31,82V97.65a5.93,5.93,0,0,0-5.92-5.93H333.25v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S356,177.15,356,173.76Zm-173.28-82H165.9v.36s2,1,2,4.43v77.25c0,3.39-2,4.43-2,4.43v.36h22.77V97.65A5.93,5.93,0,0,0,182.74,91.72Zm43.38,59.57A88.75,88.75,0,0,1,198,178.21v.34h22.56a5.93,5.93,0,0,0,5.92-5.93V151.29Zm56.48,22.47v-82H261.86v82c0,3.39-2,4.43-2,4.43v.36h24.8v-.36S282.6,177.15,282.6,173.76ZM231.67,97.65V119H232a66.28,66.28,0,0,1,10.27-15.23,69.91,69.91,0,0,1,13.43-11.69v-.34H237.59A5.93,5.93,0,0,0,231.67,97.65Zm74.74-5.93H288.3v.34a70.25,70.25,0,0,1,13.43,11.69A66.69,66.69,0,0,1,312,119h.34V97.65A5.93,5.93,0,0,0,306.41,91.72Zm214.45,59.57a7.63,7.63,0,0,0-6.8,4.18l-9,17.86c-1.87,3.7-4.1,4.88-4.1,4.88v.34h19.77a7.63,7.63,0,0,0,6.8-4.18l9.11-18a11.24,11.24,0,0,1,4-4.74v-.34ZM593,178.55H573.2a7.63,7.63,0,0,1-6.8-4.18l-30.95-61.13,11.32-22.36h.34l41.75,82.45c1.88,3.7,4.11,4.88,4.11,4.88Z" transform="translate(-61.15 -63.43)"></path>
+                 </svg>
+                 <div>gorge</div>
+                </a>
+                <a href="#" class="NavBarPhone flexCenter navBtn slideUpColors">
+                    <span class="roll ">
+                        <span class="Btntext">
+                         <span><span><i class="fas fa-chart-line"></i></span>statistics</span>
+                        </span>
+                    </span>
+                </a>
+                <a href="#" class="NavBarBookNow flexCenter navBtn slideUpColors">
+                    <span class="roll">
+                        <span class="Btntext">
+                         <span><span><i class="fas fa-table"></i></span>bookings</span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+           <section class="bookings">
+            <div>
+             <table  >
+                 <thead>
+                     <th>Name</th>
+                     <th>Arrival Date</th>
+                     <th>Departure Date</th>
+                     <th>Adults</th>
+                     <th>Childern</th>
+                     <th></th>
+                 </thead>
+                 <tbody id="bookings__Table">
+ 
+                 </tbody>
+             
+             </table>
+            </div>
+          
+       
+           </section>
        </div>
-       <section class="bookings">
-           <div>
-            <table  >
-               
-                <thead>
-                    <th>Name</th>
-                    <th>Phone</th>
-                    <th>email</th>
-                    <th>Message</th>
-                    <th>Arrival Date</th>
-                    <th>Departure Date</th>
-                    <th>Adults</th>
-                    <th>Childern</th>
-                    <th>Contact</th>
-                </thead>
-                <tbody id="bookings__Table">
-
-                </tbody>
-            
-            </table>
-           </div>
-         
-      
-       </section>
+   
     </div>
    <script src="./JS/controlPanel.bundle.js"></script>
 

@@ -8,14 +8,12 @@ module.exports = (function () {
        const {name,phone,email,msg,arrivalDate,departureDate,adults,childern}=element
        const booking = `<tr data_email="${email}">
              <td> ${name}</td>
-             <td> ${phone}</td>
-             <td> ${email}</td>
-             <td> ${msg}</td>
              <td> ${arrivalDate}</td>
              <td> ${departureDate}</td>
              <td> ${adults}</td>
              <td> ${childern}</td>
-             <td> <span><i class="fas fa-compass"></i></span></td>
+             <td> <span class="action" id="contact"><i class="fas fa-reply-all"></i>Contact</span></td>
+             <td> <span class="action" id="more"><i class="fas fa-ellipsis-h"></i>more..</span></td>
             </tr>`
             bookings__Table.innerHTML += booking
 

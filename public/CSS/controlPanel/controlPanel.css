@@ -4,14 +4,16 @@
     background-color: green;
     overflow: hidden;
 }
-.protected{
-    display: none;
-}
+
 .AuthGuard{
     height: 100vh;
     width: 100%;
+    height: 80%;
+
+    z-index: 999;
+    top:0%;
+    left: 0%;
     position: absolute;
-    background-color: #fff;
 }
 
 .auth{

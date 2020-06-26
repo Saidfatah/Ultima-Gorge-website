@@ -1,5 +1,5 @@
 const axios =require('axios')
-const {query,SubQuery}= require('../utils/short')
+const {query,SubQuery,event}= require('../utils/short')
 const {xposeRecursive,yposeRecursive,getParentRecursive,test} = require('../utils/recursive')
 require('../flatPicker_Calender/flatpicker')
 module.exports = (function () {
@@ -133,7 +133,6 @@ module.exports = (function () {
          }
       }, 20);
     }
-    
     const generalClick =e=>{
       if(!e.target.classList.contains('flatPicker__control') )
       {
@@ -193,13 +192,13 @@ module.exports = (function () {
     }
 
     //event listners
-    departureBtn.addEventListener('click',showFlatPicker)
-    arrivalBtn.addEventListener('click',showFlatPicker)
-    daysContainer.addEventListener('click',pickDate)
-    form.addEventListener('click',formClick)
-    adultsSelect.addEventListener('click',selectGuestCount)
-    numbers.forEach(number =>number.addEventListener('click',selectGuestCountNumber));
-    childernSelect.addEventListener('click',selectGuestCount)
-    submit.addEventListener('click',submitForm)
+    event(departureBtn,'click',showFlatPicker)
+    event(arrivalBtn,'click',showFlatPicker)
+    event(daysContainer,'click',pickDate)
+    event(form,'click',formClick)
+    event(adultsSelect,'click',selectGuestCount)
+    event(childernSelect,'click',selectGuestCount)
+    event(submit,'click',submitForm)
+    numbers.forEach(number => event(number,'click',selectGuestCountNumber));
     window.onclick = generalClick
 }());

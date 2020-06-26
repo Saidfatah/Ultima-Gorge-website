@@ -8,4 +8,7 @@
     border-color: green;
     background-color: rgba(50, 214, 50, 0.562);
 }
-
+.error{
+    border-color: red;
+    background-color:rgb(241, 80, 80);
+}
