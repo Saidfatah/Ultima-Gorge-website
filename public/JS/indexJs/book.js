@@ -95,8 +95,8 @@ module.exports = (function () {
         if(emailValue =='')invalideInput(email) 
         if(nameValue =='')invalideInput(name) 
         if(phoneValue =='')invalideInput(phoneNumber) 
-        if(departureValue =='')invalideInput(phoneNumber) 
-        if(arrivalValue =='')invalideInput(phoneNumber) 
+        if(departureValue =='')invalideInput(departureBtn) 
+        if(arrivalValue =='')invalideInput(arrivalBtn) 
         if(!selectAdultsCount)invalideInput(adultsSelect) 
         if(!selectChildernCount)invalideInput(childernSelect) 
       }else
@@ -181,7 +181,7 @@ module.exports = (function () {
          .catch(err=>console.log(err))
     }
     const invalideInput=(elem,msg)=>{
-      const invalide = elem.parentElement.querySelector('.invalide')
+      const invalide =SubQuery(elem.parentElement,'.invalide')
       invalide.style.height='auto'
       invalide.style.display='block'
       if(msg != undefined)  invalide.innerHTML=msg

@@ -62,7 +62,7 @@ let bookings = [
 
 const newBooking = (obj)=>{
       const newId = bookings.length +1
-      const newBooking = {...bookings[0],obj}
+      const newBooking = {...bookings[0],...obj}
       newBooking.id=newId
       return newBooking
 }
