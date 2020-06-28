@@ -12,6 +12,7 @@ module.exports = (function () {
    const statisticsBtn        = query('.NavBarPhone')
    const bookingsBtn          = query('.NavBarBookNow')
    const logoutBtn            = query('.navBarLocation')
+   
    const views=[bookings__table ,bookings__readMore,bookings__contact,bookings__statistics]
 
 

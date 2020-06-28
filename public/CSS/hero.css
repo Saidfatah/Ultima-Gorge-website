@@ -12,7 +12,6 @@ transform: translateX(-50%);
 }
 .heroText:not(.auth__heroText){
   font-family: 'Cormorant Garamond', serif;
-  word-break: break-all;
   font-size: 96px;
   font-weight:0;
   color: #fff;

@@ -1,0 +1,56 @@
+@media all and (max-width :500px){
+
+    .introduction{
+        margin-top: 3rem;
+        position: relative;
+    }
+    .abso{
+        position: absolute;
+        top:-100px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+    }
+
+    h3{
+        padding: 1rem 0rem;
+        line-height: 1em;
+        font-size:40px;
+         width: 100%;
+    }
+    .noBreak{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .introduction img{
+        width:300x;
+    }
+    .btnHolder {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .play-button{
+      padding: 1rem;
+    }
+    .play-button i{
+      font-size: 1rem;
+    }
+    .video-block {
+      padding: 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+
+     .amneities_title{
+        margin-top: 0rem;
+     }
+    .amneities{
+      
+      line-height: 1.5em;
+    }
+    
+
+}

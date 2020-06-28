@@ -8,7 +8,6 @@ module.exports= function renderMore(bookingId)
   
 
   const onApiSucces=data=>{
-       console.log(data)
        loader.style.display='none'
        info_container.innerHTML=bookingDataHtml(data)
   }
@@ -19,6 +18,8 @@ module.exports= function renderMore(bookingId)
         .catch(function (error) {
             console.log(error);
         });
+
+        
   const bookingDataHtml =booking=>{
     const {name,phone,email,msg,arrivalDate,departureDate,adults,childern}=booking
     return `

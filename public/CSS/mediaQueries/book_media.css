@@ -1,0 +1,12 @@
+@media all and (max-width :500px){
+
+    .Book:not(.auth) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+       
+     }
+     .Book h3{
+       font-size: 1.5rem;
+     }
+
+}

@@ -2,6 +2,7 @@ const {xposeRecursive,yposeRecursive,getParentRecursive,test} = require('../util
 const easer= require('../utils/myEasing')
 const {query,SubQuery}= require('../utils/short')
 module.exports = (function () {
+
      //#region refs 
 const navBarfill             = query('.navBarfill')
 const navBtn                 = Array.from(query('.navBtn',true))

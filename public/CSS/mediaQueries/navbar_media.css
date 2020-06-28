@@ -1,0 +1,46 @@
+@media all and (max-width :500px){
+
+    .navBar {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+    .navBarfill{
+        width: 100%;
+    }
+    .navBar__content{
+        grid-template: "leftButton logo rightButton" 4rem/64px 1fr 64px;
+    }
+
+   
+    .logo{
+        grid-area: logo;
+    }
+    .logo svg{
+        height:100px ;
+        width: 120px;
+    }
+    .navBarLocation{
+       display: none;
+    }
+    .NavBarPhone{
+        padding-left: 2rem;
+        grid-area: leftButton;
+     }
+     .NavBarBookNow{
+        grid-area: rightButton;
+        text-align: right;
+       padding-right: 2rem;
+     }
+ 
+    
+
+
+
+    .Btntext_text{
+        display: none;
+    }
+
+
+
+}

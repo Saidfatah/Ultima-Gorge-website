@@ -436,7 +436,7 @@ eval("const {insertStr,stringBettwen} = __webpack_require__(/*! ../utils/myStrin
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./book */ \"./public/JS/indexJs/book.js\")\r\n// require('./gallery')\r\n__webpack_require__(/*! ./scroll */ \"./public/JS/indexJs/scroll.js\")\r\n__webpack_require__(/*! ./scroolTo */ \"./public/JS/indexJs/scroolTo.js\")\r\n__webpack_require__(/*! ./video */ \"./public/JS/indexJs/video.js\")\r\n__webpack_require__(/*! ./imageSlider */ \"./public/JS/indexJs/imageSlider.js\")\r\n\n\n//# sourceURL=webpack://axios/./public/JS/indexJs/app.js?");
+eval("__webpack_require__(/*! ./book */ \"./public/JS/indexJs/book.js\")\r\n__webpack_require__(/*! ./scroll */ \"./public/JS/indexJs/scroll.js\")\r\n__webpack_require__(/*! ./scroolTo */ \"./public/JS/indexJs/scroolTo.js\")\r\n__webpack_require__(/*! ./video */ \"./public/JS/indexJs/video.js\")\r\n__webpack_require__(/*! ./imageSlider */ \"./public/JS/indexJs/imageSlider.js\")\r\n\n\n//# sourceURL=webpack://axios/./public/JS/indexJs/app.js?");
 
 /***/ }),
 
