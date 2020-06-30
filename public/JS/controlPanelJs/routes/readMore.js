@@ -1,4 +1,4 @@
-const {query,SubQuery}= require('../utils/short')
+const {query,SubQuery}= require('../../utils/short')
 module.exports= function renderMore(bookingId)
 {
   const axios =require('axios')

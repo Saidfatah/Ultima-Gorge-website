@@ -1,0 +1,70 @@
+
+  
+  .graph{
+    width:fit-content;
+    height:200px;
+    padding:2rem;
+  }
+  .graph__container{
+    position:relative;
+    
+    width:100%;
+  }
+  
+  .xAxis,.yAxis{
+    position:absolute;
+     background:red;
+    z-index:99;
+    height: 50px;
+    width:5px;
+    background:red;
+  }
+  .xAxis{
+    height: 1px;
+    width:100%;
+    bottom:0;
+    left:0;
+  }
+  .yAxis{
+    position:absolute;
+    z-index:99;
+    height:100%;
+    width:1px;
+  }
+  
+  .months{
+    width:100%;
+    display:flex;
+    padding:.5rem;
+    margin-left:.5rem;
+  }
+  .month{
+    flex : 1;
+    margin-right:.5rem;
+    transform:rotate(-60deg)
+  }
+  .columns{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: flex-end;
+    padding:0 1rem;
+  }
+  .column{
+    flex : 1;
+    background:red;
+    margin-right:.5rem;
+     transition: height 2s 1s;
+  }
+  
+  
+  .flex{
+    display:flex;
+  }
+  .bookings{
+     display:flex;
+    flex-direction:column-reverse;
+  }
+  .booking_count{
+    flex:1;
+  }

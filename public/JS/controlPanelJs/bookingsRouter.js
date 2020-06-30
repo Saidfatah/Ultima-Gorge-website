@@ -1,6 +1,6 @@
 const {event,pd,query,SubQuery}= require('../utils/short')
-const renderMore= require('../controlPanelJs/readMore')
-const renderContact= require('../controlPanelJs/contactClient')
+const renderMore= require('../controlPanelJs/routes/readMore')
+const renderContact= require('../controlPanelJs/routes/contactClient')
 module.exports = (function () {
    const bookings__table      = query('.bookings__table')
    const bookings__readMore   = query('.bookings__readMore')

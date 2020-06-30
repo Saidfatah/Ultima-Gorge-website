@@ -535,7 +535,7 @@ eval("const xpose = elem => parseInt(elem.offsetLeft)\r\nconst ypose = elem => p
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\r\nconst recursiveObject ={\r\n    query: (selector,all) => all != undefined ?document.querySelectorAll(selector): document.querySelector(selector),\r\n    SubQuery: (elem,selector) => elem.querySelector(selector),\r\n    pd: e => e.preventDefault(),\r\n    event: (elem,eventName , handler) => elem.addEventListener(eventName,handler),\r\n};\r\nmodule.exports = recursiveObject\r\n\n\n//# sourceURL=webpack://axios/./public/JS/utils/short.js?");
+eval("\r\nconst obj ={\r\n    query: (selector,all) => all != undefined ?document.querySelectorAll(selector): document.querySelector(selector),\r\n    SubQuery: (elem,selector) => elem.querySelector(selector),\r\n    pd   : e => e.preventDefault(),\r\n    elem : s => document.createElement(s),\r\n    event: (elem,eventName , handler) => elem.addEventListener(eventName,handler),\r\n};\r\nmodule.exports = obj\r\n\n\n//# sourceURL=webpack://axios/./public/JS/utils/short.js?");
 
 /***/ })
 
