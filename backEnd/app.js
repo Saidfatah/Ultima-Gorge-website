@@ -6,6 +6,7 @@ const usersRoute = require('./routes/users')
 const bookingsRoute = require('./routes/bookings')
 const {transporter} = require('./util/sendMail')
 const {mailOptions} = require('./util/sendMail')
+const connectionString = require('./config/dbConnection')
 const app =express()
 
 const corsOptions = {
@@ -27,5 +28,10 @@ app.post('/',(req,res)=>{
 })
 app.use('/users',usersRoute)
 app.use('/bookings',bookingsRoute)
+
+
+moongose.connect(connectionString,{ useNewUrlParser: true , useUnifiedTopology: true },()=>{
+    console.log('connected')
+})
 
 app.listen(4000,()=>console.log('listeng'))

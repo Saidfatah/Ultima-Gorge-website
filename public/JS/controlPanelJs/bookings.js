@@ -7,7 +7,7 @@ module.exports = (function () {
       setTimeout(() => {
         loader.style.display='none'
         bookings.forEach(element => {
-           const {id,name,phone,email,msg,arrivalDate,departureDate,adults,childern}=element
+           const {_id,name,phone,email,arrivalDate,departureDate,adults,childern}=element
            const booking = `<tr data_email="${email}">
                <td> ${name}</td>
                <td> ${arrivalDate}</td>
@@ -21,7 +21,7 @@ module.exports = (function () {
                           ><i class="fas fa-reply-all"></i>Contact</span></td>
                <td> <span class="action" 
                           id="readMore" 
-                          data_id="${id}"
+                          data_id="${_id}"
                           ><i class="fas fa-ellipsis-h"></i>more..</span></td>
               </tr>`
            bookings__Table_body.innerHTML += booking
