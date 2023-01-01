@@ -15,9 +15,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.19",
     "nodemailer": "^6.4.10",
-    "webpack": "^4.43.0"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^5.0.1"
   }
 }
